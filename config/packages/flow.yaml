@@ -1,0 +1,11 @@
+flow:
+  router:
+    enabled: true
+    mode: 'history'
+    base: '/'
+  language: ''
+  cache:
+    enabled: true
+    dir: '%kernel.cache_dir%/flow'
+  security:
+    component_security: false

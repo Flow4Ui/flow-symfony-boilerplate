@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flow Symfony Boilerplate</title>
+
+    {{ encore_entry_link_tags('app') }}
+</head>
+<body>
+<div id="app-main">
+    <Application />
+</div>
+
+<script>
+    window.FlowOptions = {{ flow_options({
+        endpoint: path('flow_endpoint'),
+        mount: '#app-main',
+        autoloadComponents: '*'
+    }) }};
+</script>
+{{ encore_entry_script_tags('app') }}
+</body>
+</html>
